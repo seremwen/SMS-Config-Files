@@ -1,0 +1,25 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: sms-api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: admin-route
+          uri: lb://sms-admin-application
+          predicates:
+            - Path=/admin/**
+          filters:
+            - AddResponseHeader=X-Powered-By, CodeWithBisky
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    gateway:
+      enabled: true
