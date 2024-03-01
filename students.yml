@@ -7,7 +7,7 @@ eureka:
 
 
 server:
-  port: 8090
+  port: 9002
 spring:
   application:
     name: students
