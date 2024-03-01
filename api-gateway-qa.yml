@@ -17,10 +17,10 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: students
-          uri: http://localhost:9002
+        - id: departments-qa
+          uri: http://localhost:9007
           predicates:
-            - Path=/api/v1/students/**
+            - Path=/api/v1/deparments/**
         - id: schools
           uri: http://localhost:9001
           predicates:
