@@ -18,13 +18,13 @@ spring:
           enabled: true
       routes:
         - id: departments-dev
-          uri: http://localhost:9005
+          uri: http://localhost:9006
           predicates:
             - Path=/api/v1/deparments/**
-        - id: schools
-          uri: http://localhost:9001
+        - id: students-dev
+          uri: http://localhost:9005
           predicates:
-            - Path=/api/v1/schools/**
+            - Path=/api/v1/students/**
 
 management:
   tracing:
