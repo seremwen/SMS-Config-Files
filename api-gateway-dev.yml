@@ -20,7 +20,7 @@ spring:
         - id: departments-dev
           uri: http://localhost:9006
           predicates:
-            - Path=/api/v1/deparments/**
+            - Path=/api/v1/departments/**
         - id: students-dev
           uri: http://localhost:9005
           predicates:
