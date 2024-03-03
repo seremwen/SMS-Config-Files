@@ -17,7 +17,7 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: departments-dev
+        - id: department-dev
           uri: http://localhost:9006
           predicates:
             - Path=/api/v1/departments/**
