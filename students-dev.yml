@@ -17,6 +17,10 @@ spring:
 
     username: root_nc
     password: rp2MBhxmM@
+  zipkin:
+    enabled: false
+  sleuth:
+    enabled: false
   jpa:
     hibernate:
       ddl-auto: update
