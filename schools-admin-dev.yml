@@ -16,8 +16,8 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/schools-admin?autoReconnect=true&createDatabaseIfNotExist=true&sessionVariables=sql_mode='NO_ENGINE_SUBSTITUTION'&jdbcCompliantTruncation=false
 
-    username: root_nc
-    password: rp2MBhxmM@
+    username: root
+    password: ngonis
   jpa:
     hibernate:
       ddl-auto: update
